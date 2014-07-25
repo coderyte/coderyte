@@ -1,2 +1,84 @@
-<div id="create" class="jumbotron">
-	<h2 class="center">Application</h2>
+<div class="container">
+	<div class="center">
+		<h1>Coderyte</h1>
+		<h3>Learn to develop, design &amp; deploy web apps.</h3>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+		<%= form_for :contact, url: contact_path do |f| %>
+				<div class="form-group">
+					<%= f.label :reason, "Why are you applying to Coderyte?" %>
+					<%= f.text_area :reason, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :problem, "What is the one problem in your life that you are burning to solve? Why?" %>
+					<%= f.text_area :problem, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :story, "Tell us a story that exemplifies who you are." %>
+					<%= f.text_area :story, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :more_story, "Tell us more about yourself by sharing a link to your blog, a video or your site" %>
+					<%= f.text_field :more_story, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :experience, "Please describe any prior programming experience, if any." %>
+					<%= f.text_area :experience, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :price_range, "How much should a course like this cost in cedis?" %>
+					<%= f.select :price_range, ["Select one","600-800", "800-1000", "1000-1200"], class: "select" %>
+				</div>
+				<hr>
+				<h4>Personal Details</h4>
+				<div class="form-group">
+					<%= f.label :first_name %>
+					<%= f.text_field :first_name, class: "form-control" %>
+				</div>
+							
+				<div class="form-group">
+					<%= f.label :last_name %>
+					<%= f.text_field :last_name, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :email %>
+					<%= f.email_field :email, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :phone %>
+					<%= f.text_field :phone, class: "form-control" %>
+				</div>
+
+					<div class="form-group">
+					<%= f.label :age %>
+					<%= f.number_field :age, class: "form-control" %>
+				</div>
+
+					<div class="form-group">
+					<%= f.label :residence, "Where do live?" %>
+					<%= f.text_field :residence, class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :education, "Highest Education level" %>
+					<%= f.select :education, ["Choose One", "Senior High School", "Bachelor", "Master", "Other"], class: "form-control" %>
+				</div>
+
+				<div class="form-group">
+					<%= f.submit "Register", class: "btn btn-success btn-lg" %>
+				</div>
+			<% end %>
+		</div>
+		<div class="col-sm-4 well">
+			
+		</div>
+	</div>
+</div>
