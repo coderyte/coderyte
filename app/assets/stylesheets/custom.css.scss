@@ -15,9 +15,9 @@ body {
 }
 #attention {
 	font-size: 55px;
-	line-height: 1.4em;
-	padding-bottom: 10px;
-	padding-top: 30px;
+	line-height: 1.0em;
+	// padding-bottom: 10px;
+	// padding-top: 20px;
 }
 .navbar-default {
 	background-color: #3a87ad;
@@ -30,7 +30,7 @@ body {
 /*
 /*Jumbotron
 ===========================*/
-#humbotron {
+.humbotron {
 	background-image: url(background.jpg);
 	background-position: 100%;
 	color: #fff;
