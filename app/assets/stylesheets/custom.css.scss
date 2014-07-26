@@ -1,51 +1,76 @@
 @import "bootstrap";
+// @import "bootstrap-theme";
+
 /*Layout
 ===========================*/
+::selection {
+	background-color: #95d6e9;
+	color: #fefefe;
+}
+
 body {
-	padding-top: 50px;
+	padding-top: 45px;
+	background-color: #fefefe;
 }
 .center {
 	text-align: center;
 }
-.container {
-	max-width: 1000px;
-}
 .justify {
 	text-align: justify;
 }
-#attention {
+.attention {
 	font-size: 55px;
 	line-height: 1.0em;
-	// padding-bottom: 10px;
-	// padding-top: 20px;
+	font-family: "Helvetica Neue", Georgia, Arial, sans-serif;
+	margin-top: -20px;
 }
 .navbar-default {
-	background-color: #3a87ad;
-	opacity: 0.6;
+	// background-color: #95d6e9;
+	opacity: 0.7;
+	border-bottom: none;
 }
 
 .navbar .navbar-brand {
 	color: #fff;
+	font-size: 30px;
 }
-/*
+.navbar-default .navbar-nav > li > a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #fefefe;
+	line-height: 25px;
+}
+
 /*Jumbotron
 ===========================*/
 .humbotron {
-	background-image: url(background.jpg);
-	background-position: 100%;
-	color: #fff;
-	padding: 70px;
+	margin-top: 10px;
 }
-p {
+p.para {
 	font-family: sans-serif;
-	font-size: 1.25em;
+	font-size: 1.50em;
+	// font-weight: bold;
+	line-height: 1.5;
 }
-/*Course
+/*buttons
 ===========================*/
-/*FAQ
-===========================*/
-#faq {
-	margin-top: 0px;
+.custom-btn {
+	width: 250px;
 }
-/*Register
+.btn {
+	margin: 10px;
+}
+/*containers
 ===========================*/
+.container {
+	max-width: 1000px;
+}
+.nav-link {
+	max-width: 1200px;
+}
+/*colors
+===========================*/
+.attention, p.para {
+	color: #222;
+}
