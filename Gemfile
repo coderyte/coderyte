@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 1.2'
 # Coderyte
 gem 'activerecord-tableless'
 gem 'figaro'
-gem 'gibbon'
+gem 'gibbon', '1.1.3'
 gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
