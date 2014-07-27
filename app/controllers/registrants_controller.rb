@@ -8,7 +8,7 @@ class RegistrantsController < ApplicationController
 		@registrant = Registrant.new(registrant_params)
 		if @registrant.valid?
 			 @registrant.update_spreadsheet
-			# to send message
+			 UserMailer.registrant_email(@registrant).deliver
 			flash[:notice] = "#{@registrant.first_name}, your registration is submitted successfully"
 			redirect_to root_path
 		else
@@ -19,7 +19,7 @@ class RegistrantsController < ApplicationController
 	private
 
 	def registrant_params
-		params.require(:registrant).permit(:reason, :problem, :story, :more_story, :experience, :price_range, :first_name, :last_name, :gender, :email, :phone, :age, :residence, :education, :about_us)
+		params.require(:registrant).permit(:reason, :problem, :story, :experience, :price_range, :first_name, :last_name, :gender, :email, :phone, :age, :residence, :education, :about_us)
 	end
 	
 end
