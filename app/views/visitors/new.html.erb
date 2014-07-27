@@ -1,19 +1,15 @@
-<!-- <div class="jumbotron center" id="humbotron">
-	<h1>Learn. Think. Plan. Execute!</h1>
-	<p>We teach absolute beginners to build web applications that solve real world problems. <br>Become a confident full stack web application developer in our 12 week part time course.</p>
-</div> -->
 <div class="jumbotron humbotron">
 	<div class="container justify" id="intro">
 		<h2 class=" attention center">Become a Confident <br>Software Developer</h2>
 		<p class="para">Learning to program and develop the web by yourself is a challenging task. You've probably spent months going through books, tutorials and online courses, but feel all you can do is follow instructions, and don’t have the clarity and confidence to build production quality applications yourself?</p>
 		
-		<p class="para">It’s time to stop kidding and get serious. Like any other fields, the best way to learn software development is through a structured process, a lot of practice, and timely support when you are stuck. A well structured learning program gives you a roadmap, pushes you through potholes and helps navigate you away from time sinks. You still need to work hard, but you’ll actually stay excited and enjoy the process.</p>
+		<p class="para">It’s time to stop kidding and get serious. Like any other fields, the best way to learn software development is through a structured process, a lot of practice, and timely support when you are stuck. A well structured learning program gives you a roadmap, pushes you through bumpy roads and helps navigate you away from time sinks. You still need to work hard, but you’ll actually stay excited and enjoy the process.</p>
 		
 		<p class="para">Our 12 week web development immersive program guides you through a curated lessons and assignments to build real life, production ready applications over three months, with full in-person support. We will help you build your programming and web development skills from scratch, all the way to the professional level. It’s not for everyone - if you are learning programming as a hobby, our program can be too much. But if you are committed and ready to work hard, we promise a transformative learning experience that will turn you into a confident developer.</p>
 
 		<div class="center">
 			<%= link_to "Apply Now", new_registrant_path, class: "btn btn-primary btn-lg custom-btn warn" %>
-			<%= link_to "Learn More", page_path('faqs'), class: "btn btn-info btn-lg custom-btn dang" %>
+			<%= link_to "Learn More", faqs_path, class: "btn btn-info btn-lg custom-btn dang" %>
 		</div>
 	</div>
 	<br>
@@ -38,7 +34,7 @@
 							<%= f.email_field :email, :placeholder => "Enter your email", class: "form-control", id: "subscribe" %>
 						</div>
 						<div class="col-sm-2" id="adjust-btn">
-							<%= f.submit "Sign up for updates", class: "btn btn-danger custom-btn" %>
+							<%= f.submit "Sign up for updates", class: "btn btn-danger btn-lg custom-btn" %>
 						</div>
 					</div>
 			<% end %>
@@ -49,6 +45,7 @@
 </div>
 <div class="container">
 	<h2 class="attention center">What You Will Learn</h2>
+	<p class="para">Our twelve week program covers the most important aspects of application design and development. From object-oriented programming like Ruby, web framework like Rails, to front-end technologies such as HTML5/CSS3 and Javascript.</p>
 	<div class="row">
 		<div class="col-sm-4">
 			<div class="panel panel-default">

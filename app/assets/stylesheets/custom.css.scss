@@ -69,7 +69,7 @@ p.para {
 	margin: 10px;
 }
 #adjust-btn {
-	margin-top: -10px;
+	margin-top: -7px;
 	margin-left: -10px;
 }
 /*containers
@@ -90,9 +90,14 @@ p.para {
 }
 /*form
 ===========================*/
-// #subscribe {
-// 	padding: 20px;
-// }
+#subscribe {
+	padding: 25px;
+}
+input[type="email"] {
+	background: lightyellow;
+	font-size: 1.5em;
+	font-style: italic;
+}
 /*registration page
 ===========================*/
 .padded {
@@ -130,5 +135,25 @@ p.para {
 }
 #contact {
 	margin-top: 10px;
+}
+/*javascript style
+===========================*/
+section > div > div {
+    background: #aa0103;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+}
+section {
+    // padding: 12px;
+    // border-radius: 12px;
+    text-align: center;
+}
+/*footer
+===========================*/
+small {
+	text-align: center;
 }
 
