@@ -1,26 +1,22 @@
 <div class="adjust-container">
 <div class="center">
   <h2 class="attention">Frequently Asked Questions</h2>
-  <p class="para">Click on a question to reveal its appropriate answer. <a href="tel:+233507889476">0507889476 | 0248216079</a></p>
+  <p class="para">Your question is not asked? Let us know <a href="tel:+233507889476">0507889476 | 0248216079</a></p>
 </div>
 <div class="container">
   <div class="row">
     <% @faqs.each do |faq| %>
-     <div class="col-sm-6">
-      <div class="panel-group" id="accordian">
+     <div class="col-sm-12">
        <div class="panel panel-default">
          <div class="panel-heading">
-           <h3 class="panel-title">
-             <a href="#<%= faq.id %>" class="accordian-toggle" data-toggle="collapse" data-parent="#accordian"><span class="glyphicon glyphicon-pushpin"></span> <%= faq.question %></a>
+           <h3 class="panel-title"> 
+            <%= " #{faq.id}: #{faq.question}" %>
            </h3>
           </div>
-         <div id="<%= faq.id %>" class="panel-collapse collapse">
            <div class="panel-body">
            <p><%= faq.answer %></p>
-           </div>
          </div>
        </div>
-     </div>
     </div>
       <% end %>
   </div>

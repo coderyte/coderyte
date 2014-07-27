@@ -1,8 +1,3 @@
-// What year are we in now?
-// var now = new Date();
-// var current_year = now.getFullYear();
-// var next_year = current_year + 1;
-
 // Set the date we're counting down to.
 var target_date = new Date("Sept 06, 2014").getTime();
  
