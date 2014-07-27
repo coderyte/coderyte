@@ -1,5 +1,5 @@
 Coderyte::Application.routes.draw do
-  resources :faqs
+  resources :faqs, only: [:new, :create, :index, :update, :edit, :destroy]
 
   # get "/pages/*id", to: 'pages#show'
   resources :registrants, only: [:new, :create]

@@ -1,5 +1,6 @@
 class FaqsController < ApplicationController
   before_action :set_faq, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate, except: [:index]
 
   # GET /faqs
   # GET /faqs.json
@@ -9,8 +10,8 @@ class FaqsController < ApplicationController
 
   # GET /faqs/1
   # GET /faqs/1.json
-  def show
-  end
+  # def show
+  # end
 
   # GET /faqs/new
   def new
@@ -28,7 +29,7 @@ class FaqsController < ApplicationController
 
     respond_to do |format|
       if @faq.save
-        format.html { redirect_to @faq, notice: 'Faq was successfully created.' }
+        format.html { redirect_to faqs_path, notice: 'Faq was successfully created.' }
         format.json { render action: 'show', status: :created, location: @faq }
       else
         format.html { render action: 'new' }
@@ -42,7 +43,7 @@ class FaqsController < ApplicationController
   def update
     respond_to do |format|
       if @faq.update(faq_params)
-        format.html { redirect_to @faq, notice: 'Faq was successfully updated.' }
+        format.html { redirect_to faqs_path, notice: 'Faq was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -70,5 +71,11 @@ class FaqsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def faq_params
       params.require(:faq).permit(:question, :answer)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |name, password|
+        name == "admin" && password == "admin_*only#"
+      end
     end
 end

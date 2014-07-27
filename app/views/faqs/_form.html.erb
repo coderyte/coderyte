@@ -1,25 +1,26 @@
+<div class="container">
 <%= form_for(@faq) do |f| %>
-  <% if @faq.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@faq.errors.count, "error") %> prohibited this faq from being saved:</h2>
-
-      <ul>
-      <% @faq.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <% if @faq.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@faq.errors.count, "error") %> prohibited this faq from being saved:</h2>
+        <ul>
+        <% @faq.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="form-group">
+      <%= f.label :question %>
+      <%= f.text_field :question, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :answer %>
+      <%= f.text_area :answer, class: "form-control" %>
+    </div>
+    <div class="form-groups">
+      <%= f.submit class: "btn btn-primary" %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :question %><br>
-    <%= f.text_field :question %>
-  </div>
-  <div class="field">
-    <%= f.label :answer %><br>
-    <%= f.text_area :answer %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

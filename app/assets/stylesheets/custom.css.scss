@@ -80,8 +80,55 @@ p.para {
 .nav-link {
 	max-width: 1200px;
 }
+.adjust-container {
+	margin-top: 30px;
+}
 /*colors
 ===========================*/
 .attention, p.para {
 	color: #222;
 }
+/*form
+===========================*/
+// #subscribe {
+// 	padding: 20px;
+// }
+/*registration page
+===========================*/
+.padded {
+	padding: 50px 15px;
+}
+#pright {
+	margin-right: 20px;
+}
+.contact-info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+}
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 5px;
+	font-size: 1.1em;
+}
+.contact-info li.phone a {
+	background-image: url(phone.png);
+}
+.contact-info li.mail a {
+	background-image: url(mail.png);
+}
+.contact-info li.twitter a {
+	background-image: url(twitter.png);
+}
+.contact-info li.facebook a {
+	background-image: url(facebook.png);
+}
+#contact {
+	margin-top: 10px;
+}
+
