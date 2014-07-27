@@ -45,7 +45,7 @@
 
         	<div class="form-group">
 	          <%= f.label :price_range, "How much should a course like this cost in cedis?" %>
-	          <%= f.select :price_range, ["Select one", "800-1000", "1000-1200"], class: "select" %>
+	          <%= f.select :price_range, ["800-1000", "1000-1200"], class: "form-control" %>
         	</div>
 
         	<hr>
@@ -58,6 +58,11 @@
 	        <div class="form-group">
 	          <%= f.label :last_name %>
 	          <%= f.text_field :last_name, class: "form-control" %>
+        	</div>
+
+        	<div class="form-group">
+	          <%= f.label :gender %>
+	          <%= f.select :gender, ["Choose", "Male", "Female"], class: "form-control" %>
         	</div>
 
 	        <div class="form-group">
@@ -83,6 +88,11 @@
         	<div class="form-group">
 	          <%= f.label :education, "Highest Education level" %>
 	          <%= f.select :education, ["Choose One", "Senior High School", "Bachelor", "Master", "Other"], class: "form-control" %>
+        	</div>
+
+        	<div class="form-group">
+	          <%= f.label :about_us, "How did you hear about us?" %>
+	          <%= f.text_field :about_us, class: "form-control" %>
         	</div>
 
         	<div class="form-group">

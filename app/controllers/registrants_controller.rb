@@ -7,9 +7,9 @@ class RegistrantsController < ApplicationController
 	def create
 		@registrant = Registrant.new(registrant_params)
 		if @registrant.valid?
-			# to do save data
+			 @registrant.update_spreadsheet
 			# to send message
-			flash[:notice] = "Registration successful #{@registrant.first_name}"
+			flash[:notice] = "#{@registrant.first_name}, your registration is submitted successfully"
 			redirect_to root_path
 		else
 			render :new
@@ -19,7 +19,7 @@ class RegistrantsController < ApplicationController
 	private
 
 	def registrant_params
-		params.require(:registrant).permit(:reason, :problem, :story, :more_story, :experience, :price_range, :first_name, :last_name, :email, :phone, :age, :residence, :education)
+		params.require(:registrant).permit(:reason, :problem, :story, :more_story, :experience, :price_range, :first_name, :last_name, :gender, :email, :phone, :age, :residence, :education, :about_us)
 	end
 	
 end
