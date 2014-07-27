@@ -3,6 +3,7 @@ Coderyte::Application.routes.draw do
 
   # get "/pages/*id", to: 'pages#show'
   resources :registrants, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
   root to: "visitors#new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
