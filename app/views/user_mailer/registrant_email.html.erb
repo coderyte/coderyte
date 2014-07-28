@@ -5,16 +5,17 @@
 	<body>
 		<div class="panel panel-info">
 			<div class="panel-heading">
-				<h1>New Application Submission</h1>
+				<h3>New Application Submission</h3>
 				<p>This applicant contact details:</p>
 				<p>
-					<%= @registrant.first_name %>
-					<%= @registrant.last_name %>
-					<%= @registrant.email %>
+					<%= "First Name: #{@registrant.first_name}" %> <br>
+					<%= "Last Name: #{@registrant.last_name}" %> <br>
+					<%= "Email: #{@registrant.email}" %> <br>
+					<%= "Phone: #{@registrant.phone}" %>
 				</p>
 			</div>
 			<div class="panel-body">
-				<h2>Application Details of Applicant</h2>
+				<h3>Application Details of Applicant</h3>
 				<ul>
 					<li><%= "Reason: #{@registrant.reason}" %></li>
 					<li><%= "Problem: #{@registrant.problem}" %></li>
