@@ -3,23 +3,29 @@
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 	</head>
 	<body>
-		<h1>New Application Submission</h1>
-		<p>This applicant contact details:</p>
-		<p>
-			<%= @registrant.first_name %>
-			<%= @registrant.last_name %>
-			<%= @registrant.email %>
-		</p>
-		<h2>Application Details of Applicant</h2>
-		<ul>
-			<li><%= "Reason: #{@registrant.reason}" %></li>
-			<li><%= "Problem: #{@registrant.problem}" %></li>
-			<li><%= "Experience: #{@registrant.experience}" %></li>
-			<li><%= "Price Range: #{@registrant.price_range}" %></li>
-			<li><%= "Story: #{@registrant.story}" %></li>
-			<li><%= "Education: #{@registrant.education}" %></li>
-			<li><%= "Age: #{@registrant.age}" %></li>
-			<li><%= "About: #{@registrant.about_us}" %></li>
-		</ul>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1>New Application Submission</h1>
+				<p>This applicant contact details:</p>
+				<p>
+					<%= @registrant.first_name %>
+					<%= @registrant.last_name %>
+					<%= @registrant.email %>
+				</p>
+			</div>
+			<div class="panel-body">
+				<h2>Application Details of Applicant</h2>
+				<ul>
+					<li><%= "Reason: #{@registrant.reason}" %></li>
+					<li><%= "Problem: #{@registrant.problem}" %></li>
+					<li><%= "Experience: #{@registrant.experience}" %></li>
+					<li><%= "Price Range: #{@registrant.price_range}" %></li>
+					<li><%= "Story: #{@registrant.story}" %></li>
+					<li><%= "Education: #{@registrant.education}" %></li>
+					<li><%= "Age: #{@registrant.age}" %></li>
+					<li><%= "About: #{@registrant.about_us}" %></li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>
