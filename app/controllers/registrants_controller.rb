@@ -9,7 +9,7 @@ class RegistrantsController < ApplicationController
 		if @registrant.valid?
 			 @registrant.update_spreadsheet
 			 UserMailer.registrant_email(@registrant).deliver
-			flash[:notice] = "#{@registrant.first_name}, your registration is submitted successfully"
+			flash[:notice] = "#{@registrant.first_name}, your application is successfully submitted"
 			redirect_to root_path
 		else
 			render :new
