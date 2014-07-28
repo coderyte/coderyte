@@ -8,7 +8,7 @@ class VisitorsController < ApplicationController
 		@visitor = Visitor.new(visitor_params)
 		if @visitor.valid?
 			@visitor.subscribe
-			flash[:notice] = "Signed up #{@visitor.email} for newsletters"
+			flash[:notice] = "You've successfully signed up for Coderyte updates. Check your email for confirmation"
 			redirect_to root_path
 		else
 			render :new
