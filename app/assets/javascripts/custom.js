@@ -1,3 +1,6 @@
+$( document ).on('ready page:load', function () {
+    update();
+});
 // Set the date we're counting down to.
 var target_date = new Date("Sept 06, 2014").getTime();
  
