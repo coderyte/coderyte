@@ -75,7 +75,7 @@ class FaqsController < ApplicationController
 
     def authenticate
       authenticate_or_request_with_http_basic do |name, password|
-        name == "admin" && password == "admin_*only#"
+        name == "admin" && password == ENV["PASSWORD"]
       end
     end
 end
