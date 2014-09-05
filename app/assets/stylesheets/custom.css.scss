@@ -26,7 +26,7 @@ body {
 }
 .navbar-default {
 	// background-color: #95d6e9;
-	opacity: 0.7;
+	opacity: 0.9;
 	border-bottom: none;
 }
 
@@ -92,11 +92,12 @@ p.para {
 ===========================*/
 #subscribe {
 	padding: 25px;
-}
-input[type="email"] {
-	background: lightyellow;
 	font-size: 1.5em;
-	font-style: italic;
+}
+
+form div.field_with_errors label {
+	color: #900;
+	font-weight: bold;
 }
 /*registration page
 ===========================*/

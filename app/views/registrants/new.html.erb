@@ -33,19 +33,9 @@
 	          <%= f.text_area :story, class: "form-control" %>
         	</div>
 
-        	<!-- <div class="form-group">
-	          <%#= f.label :more_story, "Tell us more about yourself by sharing a link to your blog, a video or your site" %>
-	          <%#= f.text_field :more_story, class: "form-control" %>
-        	</div -->
-
         	<div class="form-group">
 	          <%= f.label :experience, "Please describe any prior programming experience, if any." %>
 	          <%= f.text_area :experience, class: "form-control" %>
-        	</div>
-
-        	<div class="form-group">
-	          <%= f.label :price_range, "How much should a course like this cost in cedis?" %>
-	          <%= f.select :price_range, ["800-1000", "1000-1200"], class: "form-control" %>
         	</div>
 
         	<hr>
@@ -87,7 +77,7 @@
 
         	<div class="form-group">
 	          <%= f.label :education, "Highest Education level" %>
-	          <%= f.select :education, ["Choose One", "Senior High School", "Bachelor", "Master", "Other"], class: "form-control" %>
+	          <%= f.select(:education, ["Senior High School", "Bachelor", "Master", "Other"], prompt: true, class: "form-control") %>
         	</div>
 
         	<div class="form-group">
@@ -102,7 +92,7 @@
 		</div>
 		<div class="col-sm-4 well">
 			<h3>Location</h3>
-			<p>We have a workspace at the premises of iSpace, Osu</p>
+			<p>We located at the premises of iSpace, Anumansa Street, Osu</p>
 			<hr>
 				<h3 id="contact">Contact Details</h3>
 					<ul class="contact-info">
@@ -111,26 +101,9 @@
 						<li class="twitter"><a href="https://twitter.com/intent/tweet?screen_name=teamcoderyte">@teamcoderyte</a></li>
 						<li class="facebook"><a href="https://facebook.com/teamcoderyte">TeamCoderyte</a></li>
 					</ul>
-			<p></p>
-			<hr>
-			<h3>Starting In</h3>
-				<section class="row" id="countdown">
-		      <div class="col-md-3">
-		      	<div id="d"></div> Days
-		      </div>
-		      <div class="col-md-3">
-		      	<div id="h"></div>Hours
-		      </div>
-		      <div class="col-md-3">
-		      	<div id="m"></div>Minutes
-		      </div>
-		      <div class="col-md-3">
-		      	<div id="s"></div>Seconds
-		      </div>
-				</section>
 				<hr>
 			<h3>Course Schedule</h3>
-			<p>September 6th - 29th November, 2014 <br> Weekends Only <br>Class: 9:00am - 3:30pm. <br></p>
+			<p>September 13th - 6th December, 2014 <br> Saturdays Only <br>Class: 9:00am - 3:30pm. <br></p>
 		</div>
 	</div>
 	

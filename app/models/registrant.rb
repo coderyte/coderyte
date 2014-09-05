@@ -4,7 +4,6 @@ class Registrant < ActiveRecord::Base
 	column :reason, :text
 	column :problem, :text
 	column :story, :text
-	column :price_range, :string
 	column :experience, :text
 	column :first_name, :string
 	column :last_name, :string
@@ -16,7 +15,7 @@ class Registrant < ActiveRecord::Base
 	column :education, :string
 	column :about_us, :string
 
-	validates :reason, :problem, :story, :price_range, :experience, :first_name, :last_name, :gender, :email, :phone, :age, :residence, :education, :about_us, presence: true
+	validates :reason, :problem, :story, :experience, :first_name, :last_name, :gender, :email, :phone, :age, :residence, :education, :about_us, presence: true
 
 	validates_format_of :email, 
 											:with => /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
@@ -51,7 +50,6 @@ class Registrant < ActiveRecord::Base
 		ws[last_row, 11] = self.problem
 		ws[last_row, 12] = self.story
 		ws[last_row, 13] = self.experience
-		ws[last_row, 14] = self.price_range
 		ws.save
 	end
 end
