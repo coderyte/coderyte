@@ -52,7 +52,7 @@
 
         	<div class="form-group">
 	          <%= f.label :gender %>
-	          <%= f.select :gender, ["Choose", "Male", "Female"], class: "form-control" %>
+	          <%= f.select(:gender, ["Male", "Female"], prompt: true, class: "form-control") %>
         	</div>
 
 	        <div class="form-group">
@@ -90,20 +90,42 @@
         	</div>
 			<% end %>
 		</div>
-		<div class="col-sm-4 well">
-			<h3>Location</h3>
-			<p>We located at the premises of iSpace, Anumansa Street, Osu</p>
-			<hr>
-				<h3 id="contact">Contact Details</h3>
-					<ul class="contact-info">
-						<li class="phone"><a href="tel:+233507889476">0507889476 | 0248216079</a></li>
-						<li class="mail"><a href="mailto:teamcoderyte@gmail.com">teamcoderyte@gmail.com</a></li>
-						<li class="twitter"><a href="https://twitter.com/intent/tweet?screen_name=teamcoderyte">@teamcoderyte</a></li>
-						<li class="facebook"><a href="https://facebook.com/teamcoderyte">TeamCoderyte</a></li>
-					</ul>
-				<hr>
-			<h3>Course Schedule</h3>
-			<p>September 13th - 6th December, 2014 <br> Saturdays Only <br>Class: 9:00am - 3:30pm. <br></p>
+		<div class="col-sm-4">
+				<div class="well">
+					<h3>Location</h3>
+					<p>We located at the premises of iSpace, Anumansa Street, Osu</p>
+					<hr>
+						<h3 id="contact">Contact Details</h3>
+							<ul class="contact-info">
+								<li class="phone"><a href="tel:+233507889476">0507889476 | 0248216079</a></li>
+								<li class="mail"><a href="mailto:teamcoderyte@gmail.com">teamcoderyte@gmail.com</a></li>
+								<li class="twitter"><a href="https://twitter.com/intent/tweet?screen_name=teamcoderyte">@teamcoderyte</a></li>
+								<li class="facebook"><a href="https://facebook.com/teamcoderyte">TeamCoderyte</a></li>
+							</ul>
+						<hr>
+					<h3>Course Schedule</h3>
+					<p>September 13th - 6th December, 2014 <br> Saturdays Only <br>Class: 9:00am - 3:30pm. <br></p>
+								<hr>
+								<h3>Course Fee</h3>
+								<p>The tuition fee for this twelve 12 week web development training is GHS 900. <br>Flexible fee payment plans available</p>
+				</div>
+			<h3>Payment Plans</h3>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Plan #1</th>
+						<th>Plan #2</th>
+						<th>Plan #3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>50% initial deposit before the course starts and students have four weeks to finish paying off the other half.</td>
+						<td>Students who pay the full fees before the course starts automatically receive a discount of 10%.</td>
+						<td>If none of the above payment options favor you, let us know ASAP.</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 	
