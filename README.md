@@ -1,0 +1,1 @@
+This is the web project of CODERYTE.
